@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Build_Menu.iml" filepath="$PROJECT_DIR$/.idea/Build_Menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLYDanCu/QuanLYDanCu.iml" filepath="$PROJECT_DIR$/QuanLYDanCu/QuanLYDanCu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLyCanBo/QuanLyCanBo.iml" filepath="$PROJECT_DIR$/QuanLyCanBo/QuanLyCanBo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLyHoSoHocSinh/QuanLyHoSoHocSinh.iml" filepath="$PROJECT_DIR$/QuanLyHoSoHocSinh/QuanLyHoSoHocSinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLyKhachSan/QuanLyKhachSan.iml" filepath="$PROJECT_DIR$/QuanLyKhachSan/QuanLyKhachSan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLyThiDaiHoc/QuanLyThiDaiHoc.iml" filepath="$PROJECT_DIR$/QuanLyThiDaiHoc/QuanLyThiDaiHoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLyThuVien/QuanLyThuVien.iml" filepath="$PROJECT_DIR$/QuanLyThuVien/QuanLyThuVien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLyXeMay/QuanLyXeMay.iml" filepath="$PROJECT_DIR$/QuanLyXeMay/QuanLyXeMay.iml" />
+    </modules>
+  </component>
+</project>
