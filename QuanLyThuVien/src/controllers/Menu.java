@@ -12,10 +12,11 @@ public class Menu {
     ManagerBook managerBook = new ManagerBook();
     Scanner inputInt = new Scanner(System.in);
     Scanner inputString = new Scanner(System.in);
+    int choice;
 
     public void showMenu() {
 
-        int choice;
+
         do {
             System.out.println("----Menu----\n"
                     + "1.Thêm Tài Liệu \n"
@@ -48,7 +49,7 @@ public class Menu {
 
     public void timKiemTaiLieu() {
 
-        int choice;
+
         do {
             System.out.println("----Menu----\n"
                     + "1.Tìm Kiếm Book \n"
@@ -79,7 +80,6 @@ public class Menu {
     }
     public void themTaiLieu() {
 
-        int choice;
         do {
             System.out.println("----Menu----\n"
                     + "1.Thêm Sách \n"

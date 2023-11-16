@@ -31,7 +31,6 @@ public class Menu {
                 case 2:
                     System.out.println("Nhập Thông Tin Xe Muốn Xửa");
                     int a=inputInt.nextInt();
-//                    managerMoto.search(a);
                     System.out.println("----Thông Tin Muốn Sửa----");
                     System.out.println("Nhập ID Xe Máy");
                     int numberId = inputInt.nextInt();
@@ -43,8 +42,6 @@ public class Menu {
                     int numberCc = inputInt.nextInt();
                     Moto moto = new Moto(numberId, nameMoto2, numberPrice, numberCc);
                     managerMoto.edit(a,moto);
-
-
                     break;
                 case 3:
                     System.out.println("Nhập Tên Xe Muốn Xóa");

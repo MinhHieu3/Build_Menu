@@ -2,11 +2,11 @@ package sevices;
 
 import models.Moto;
 
-public interface IManager {
-    void add(Object object);
-    void edit(int a, Moto moto);
-    Object delete(String name);
-    void searchName(String nameMoto);
-    void searchPrice( int price);
+public interface IManager<O,T,N> {
+    void add(O add);
+    void edit(N a,O edit);
+    void delete(T delete);
+    O searchName(T search);
+    void searchPrice( N price);
     void showAll();
 }
