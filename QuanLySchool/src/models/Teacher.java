@@ -50,7 +50,7 @@ public class Teacher {
     @Override
     public String toString() {
         return
-                "Số Thứ Tự Giáo Viên" + ID +"\n" +
+                "STT  " + ID +"\n" +
                 "Tên Giáo Viên : " + nameTeacher + "\n" +
                 "Môn Dạy : " + subject + "\n" +
                 "Lương : " + wega +"\n" ;

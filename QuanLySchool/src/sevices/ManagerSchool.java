@@ -3,6 +3,7 @@ package sevices;
 import models.Teacher;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class ManagerSchool implements IManager<Object, String> {
@@ -26,7 +27,7 @@ public class ManagerSchool implements IManager<Object, String> {
     public void edit(String name, Object teacher) {
         int index = -1;
         for (int i = 0; i < this.teacherList.size(); i++) {
-            if (name == this.teacherList.get(i).getNameTeacher()) {
+            if (this.teacherList.get(i).getNameTeacher().equals(name)) {
                 index = i;
             }
         }
@@ -35,9 +36,9 @@ public class ManagerSchool implements IManager<Object, String> {
 
     @Override
     public void delete(String nameTeachers) {
-        for (Teacher p:teacherList) {
-            if(p.getNameTeacher().equals(nameTeachers)){
-                teacherList.remove(p);
+        for (Teacher t : teacherList) {
+            if (t.getNameTeacher().equals(nameTeachers)) {
+                teacherList.remove(t);
             }
         }
     }
@@ -51,10 +52,10 @@ public class ManagerSchool implements IManager<Object, String> {
         }
         return null;
     }
-    public void ascendingUp(){
-        List <Teacher> list=new ArrayList<>();
-        list.sort((a,b)->Float.compare((float) a.getWega(),(float) b.getWega()));
-        teacherList.add((Teacher) list);
+
+    public void ascendingUp() {
+        List<Teacher> list = new ArrayList<>(teacherList);
+        list.sort(Comparator.comparingDouble(Teacher::getWega));
         System.out.println(teacherList);
 
     }

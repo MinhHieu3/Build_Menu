@@ -120,9 +120,10 @@ public class Menu {
                         managerSchool.edit(editTeacher,editTeachers);
                         break;
                     case "3":
+                        managerSchool.showAll();
                         System.out.println("Nhập Thông Tin Giáo Viên Muốn Xóa");
-                        String  nameTeacher=inputString.nextLine();
-                        managerStrudent.delete(nameTeacher);
+                        String  nameTeachers=inputString.nextLine();
+                        managerSchool.delete(nameTeachers);
                         break;
                     case "4":
                         addTeacher();
@@ -130,7 +131,7 @@ public class Menu {
                     case "5":
                         System.out.println("Nhập Thông Tin Giáo Viên Muốn Tìm");
                         String nameSubject=inputString.nextLine();
-                        managerSchool.search(nameSubject);
+                        System.out.println(managerSchool.search(nameSubject));
                         break;
                     case "6":
                         managerSchool.ascendingUp();
@@ -151,7 +152,6 @@ public class Menu {
         int chemistry=inputInt.nextInt();
         Strudent strudent=new Strudent(nameStrudentss,math,physical,chemistry);
         managerStrudent.add(strudent);
-        managerStrudent.showAll();
     }
     public void addTeacher(){
         System.out.println("Nhập Họ Và Tên ");
@@ -161,8 +161,7 @@ public class Menu {
         System.out.println("Nhập Lương ");
         int newWega=inputInt.nextInt();
         Teacher teacher1=new Teacher(newTeacher,newSubject,newWega);
-        managerStrudent.add(teacher1);
-        managerStrudent.showAll();
+        managerSchool.add(teacher1);
     }
     public boolean isInterger(String input){
         try {
