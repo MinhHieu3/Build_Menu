@@ -6,13 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManagerMoto implements IManager <Object,String,Integer>{
-    List<Moto> motoList;
-
-    {
-        motoList = new ArrayList<>();
-    }
+    List<Moto> motoList=new ArrayList<>();
 
     @Override
+
     public void add(Object moto) {
         motoList.add((Moto) moto);
     }

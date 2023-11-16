@@ -7,8 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/QuanLyCanBo/QuanLyCanBo.iml" filepath="$PROJECT_DIR$/QuanLyCanBo/QuanLyCanBo.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuanLyHoSoHocSinh/QuanLyHoSoHocSinh.iml" filepath="$PROJECT_DIR$/QuanLyHoSoHocSinh/QuanLyHoSoHocSinh.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuanLyKhachSan/QuanLyKhachSan.iml" filepath="$PROJECT_DIR$/QuanLyKhachSan/QuanLyKhachSan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLySchool/QuanLySchool.iml" filepath="$PROJECT_DIR$/QuanLySchool/QuanLySchool.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuanLyThiDaiHoc/QuanLyThiDaiHoc.iml" filepath="$PROJECT_DIR$/QuanLyThiDaiHoc/QuanLyThiDaiHoc.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuanLyThuVien/QuanLyThuVien.iml" filepath="$PROJECT_DIR$/QuanLyThuVien/QuanLyThuVien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuanLyTruongHoc/QuanLyTruongHoc.iml" filepath="$PROJECT_DIR$/QuanLyTruongHoc/QuanLyTruongHoc.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuanLyXeMay/QuanLyXeMay.iml" filepath="$PROJECT_DIR$/QuanLyXeMay/QuanLyXeMay.iml" />
     </modules>
   </component>
