@@ -1,7 +1,5 @@
 package sevices;
-
 import models.Teacher;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -14,13 +12,11 @@ public class ManagerSchool implements IManager<Object, String> {
         for (Teacher p : teacherList) {
             System.out.println(p);
         }
-
     }
 
     @Override
     public void add(Object nameTeacher) {
         teacherList.add((Teacher) nameTeacher);
-
     }
 
     @Override
@@ -36,11 +32,7 @@ public class ManagerSchool implements IManager<Object, String> {
 
     @Override
     public void delete(String nameTeachers) {
-        for (Teacher t : teacherList) {
-            if (t.getNameTeacher().equals(nameTeachers)) {
-                teacherList.remove(t);
-            }
-        }
+        teacherList.removeIf(t -> t.getNameTeacher().equals(nameTeachers));
     }
 
     @Override

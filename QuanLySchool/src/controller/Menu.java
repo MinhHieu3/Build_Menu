@@ -1,11 +1,8 @@
 package controller;
-
 import models.Strudent;
 import models.Teacher;
 import sevices.ManagerSchool;
 import sevices.ManagerStrudent;
-
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Menu {
@@ -32,7 +29,6 @@ public class Menu {
                 }
             }
         }while (!choice.equals("0"));
-
     }
     public void showMenuStudent(){
         do {
@@ -136,7 +132,6 @@ public class Menu {
                     case "6":
                         managerSchool.ascendingUp();
                         break;
-
                 }
             }
         }while (!choice.equals("0"));
