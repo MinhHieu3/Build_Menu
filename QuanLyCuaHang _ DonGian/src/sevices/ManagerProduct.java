@@ -2,12 +2,14 @@ package sevices;
 
 import models.Product;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ManagerProduct  implements IManager<Product,String>{
     List<Product> productList=new ArrayList<>();
     List<String> list= new ArrayList<>();
+    LocalDateTime currentTime = LocalDateTime.now();
     public ManagerProduct() {
         productList.add(new Product(1,"Bim Bim",1000,10));
         productList.add(new Product(2,"Mì Tôm",4000,20));
@@ -56,7 +58,7 @@ public class ManagerProduct  implements IManager<Product,String>{
             if (p.getQuantity()>0){
                 System.out.println(p);
             } else if (p.getQuantity()==0) {
-                System.out.println(p+"Hết Hàng");
+                System.out.println(p+ "Hết Hàng");
             }
         }
     }
@@ -66,7 +68,7 @@ public class ManagerProduct  implements IManager<Product,String>{
             int i=0;
             if (p.getQuantity()>0&&p.getId()==id&&p.getQuantity()>id){
                  i= p.getQuantity() - sl;
-                list.add(namePeople+"\n"+p.getId()+"\n"+p.getName()+"\n"+p.getPrice()+"\n"+i);
+                list.add(namePeople+"\n"+"Thời Gian Mua: \n"+currentTime+"\n"+p.getId()+"\n"+p.getName()+"\n"+p.getPrice()+"\n"+i);
                 System.out.println(list);
                 break;
             } else if (p.getQuantity()<sl) {
