@@ -59,19 +59,20 @@ public class ManagerProduct  implements IManager<Product,String>{
         }
     }
     public void check(int id, int sl, String namePeople){
+
         for (Product p:productList) {
             int i=0;
             if (p.getQuantity()>0&&p.getId()==id&&p.getQuantity()>id){
                  i= p.getQuantity() - sl;
-                System.out.println(p.getId()+"\n"+p.getName()+"\n"+p.getPrice()+"\n"+i);
+                list.add(namePeople+"\n"+p.getId()+"\n"+p.getName()+"\n"+p.getPrice()+"\n"+i);
                 break;
             } else if (p.getQuantity()<sl) {
                 System.out.println("Không đủ hàng - Khách Hàng Nhập Lại Số Lượng");
                 break;
             }
         }
-
     }
+
     public void showBill(){
         for (String p:list) {
             System.out.println(p);
