@@ -64,7 +64,7 @@ public class ManagerStrudent implements IManager <Object,String>{
     }
     public void showList3(){
         for (Strudent p:strudentList) {
-            if (p.Medium()<5||p.getMath()<5||p.getPhysical()<5||p.getChemistry()<5){
+            if (p.Medium()<5&&p.getMath()<5&&p.getPhysical()<5&&p.getChemistry()<5){
                 System.out.println(p+"\n Trượt" );
             }
         }
