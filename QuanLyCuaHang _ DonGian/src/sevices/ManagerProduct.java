@@ -55,6 +55,8 @@ public class ManagerProduct  implements IManager<Product,String>{
         for (Product p:productList) {
             if (p.getQuantity()>0){
                 System.out.println(p);
+            } else if (p.getQuantity()==0) {
+                System.out.println(p+"Hết Hàng");
             }
         }
     }
@@ -73,7 +75,6 @@ public class ManagerProduct  implements IManager<Product,String>{
             }
         }
     }
-
     public void showBill(){
         for (String p:list) {
             System.out.println(p);
