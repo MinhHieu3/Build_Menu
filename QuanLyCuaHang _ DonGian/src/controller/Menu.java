@@ -39,7 +39,6 @@ public class Menu {
                     System.out.println("Nhập Vào Tên Khách Hàng");
                     String namePeople=intputString.nextLine();
                     managerProduct.check(id,number,namePeople);
-                    managerProduct.showBill();
                     break;
                 case 5:
                     managerProduct.showBill();

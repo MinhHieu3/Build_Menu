@@ -65,6 +65,7 @@ public class ManagerProduct  implements IManager<Product,String>{
             if (p.getQuantity()>0&&p.getId()==id&&p.getQuantity()>id){
                  i= p.getQuantity() - sl;
                 list.add(namePeople+"\n"+p.getId()+"\n"+p.getName()+"\n"+p.getPrice()+"\n"+i);
+                System.out.println(list);
                 break;
             } else if (p.getQuantity()<sl) {
                 System.out.println("Không đủ hàng - Khách Hàng Nhập Lại Số Lượng");
