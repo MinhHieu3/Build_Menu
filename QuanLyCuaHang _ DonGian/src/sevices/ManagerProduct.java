@@ -13,7 +13,7 @@ public class ManagerProduct  implements IManager<Product,String>{
     public ManagerProduct() {
         productList.add(new Product(1,"Bim Bim",1000,10));
         productList.add(new Product(2,"Mì Tôm",4000,20));
-        productList.add(new Product(3,"gà",5000,5));
+        productList.add(new Product(3,"gà",5000,1));
         productList.add(new Product(4,"Kẹo",4000,20));
         productList.add(new Product(5,"Tôm",4000,20));
         productList.add(new Product(6,"Bút Bi",4000,20));
@@ -64,13 +64,15 @@ public class ManagerProduct  implements IManager<Product,String>{
     }
     public void check(int id, int sl, String namePeople){
         for (Product p:productList) {
-            int i=0;
-            if (p.getQuantity()>0&&p.getId()==id&&p.getQuantity()>id){
+            int i,money;
+            if (p.getQuantity()>0&&p.getId()==id&&p.getQuantity()>=sl){
                  i= p.getQuantity() - sl;
-                list.add(namePeople+"\n"+"Thời Gian Mua: \n"+currentTime+"\n"+p.getId()+"\n"+p.getName()+"\n"+p.getPrice()+"\n"+i);
-                System.out.println(namePeople+"\n"+"Thời Gian Mua: \n"+currentTime+"\n"+p.getId()+"\n"+p.getName()+"\n"+p.getPrice()+"\n"+i);
+                     money = p.getPrice() * sl;
+                     list.add("Tên Khách Hàng: \n" + namePeople + "\n" + "Thời Gian Mua: \n" + currentTime + "\n" + "Sản Phẩm : \n" + p.getName() + "\n" + "Số tiền : \n" + p.getPrice() + "\n" + "Số lượng mua: \n" + sl + "\n" + "Số lượng còn lại: \n" + i);
+                     System.out.println("Tên khách hàng: \n" + namePeople + "\n" + "Thời Gian Mua: \n" + currentTime + "\n" + "Sản Phẩm: \n" + p.getName() + "\n" + "Số lượng mua: \n" + sl + "\n" + "Số tiền : \n" + money + "\n");
                 break;
-            } else if (p.getQuantity()<sl) {
+            }
+            if (p.getQuantity()<sl) {
                 System.out.println("Không đủ hàng - Khách Hàng Nhập Lại Số Lượng");
                 break;
             }

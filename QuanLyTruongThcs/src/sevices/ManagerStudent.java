@@ -3,7 +3,9 @@ package sevices;
 import models.Student;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ManagerStudent implements IManager<Student> {
     List<Student> studentList = new ArrayList<>();
@@ -34,12 +36,16 @@ public class ManagerStudent implements IManager<Student> {
 
     @Override
     public Student search(int n, String homeTowns) {
-
+        Map<Integer,String>map=new HashMap<>();
         for (Student p:studentList) {
-            int count=0;
             if (p.getAge()==23&&p.getHomeTown().equals(homeTowns)){
-                return p;
+                if (map.containsKey(p)){
+                    map.put(p.getAge(),map.get(p)+1);
+                }
             }
+        }
+        for (Map.Entry<Integer,String> p:map.entrySet()) {
+            System.out.println(p);
         }
         return null;
     }
